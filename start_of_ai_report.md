@@ -105,3 +105,31 @@ FineWeb, the dataset
 Traditional RAG solutions usually involve creating text snippets 256 tokens at a time with sliding windows (128	overlapping the prior chunk). This makes retrieval more efficient, but significantly less accurat	
 
 Anthropic solved this using ‘contextual embeddings’, where a prompt instructs the model to generate text explaining the context of each chunk in the document
+
+# industry
+
+## 86 NVIDIA becomes the world’s most powerful company
+
+## 87 Blackwell family of GPUs
+
+The new Blackwell B200 GPU and GB200 Superchip promise significant performance gain over the Hopper
+architecture of H100 fame. NVIDIA claims it can reduce cost and energy consumption 25x over an H100
+
+Jensen Huang has argued that every government needs to build its own LLM to preserve its national heritage
+
+## Nvidia Amd Intel
+
+A100 : Il offre des performances impressionnantes pour les tâches de calcul intensif. Par exemple, il propose jusqu'à 312 téraflops de performance en FP16 (virgule flottante 16 bits), très utile pour l'apprentissage profond.
+H100 : Les performances sont largement supérieures, avec jusqu’à 1 pétaflop de performance en FP8 (un nouveau format introduit dans Hopper pour l'IA), ce qui représente une amélioration significative pour les modèles d’IA de grande tail
+
+## 92 H100 
+
+![alt text](./img/image3.png)
+
+## 105 But where’s the revenue…?
+
+![alt text](./img/image4.png)
+
+## 107 Meta Pivot
+
+![alt text](./img/image5.png)
