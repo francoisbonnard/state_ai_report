@@ -133,3 +133,35 @@ H100 : Les performances sont largement supérieures, avec jusqu’à 1 pétaflop
 ## 107 Meta Pivot
 
 ![alt text](./img/image5.png)
+
+## 111 Chat agents as interactive developer sidekicks…
+
+## 117 Github reigns supreme, but an ecosystem of AI coding companies is growing
+
+By far the most widely-used AI-powered developer tool, Copilot adoption is growing 180% year-over-year and its annual revenue run rate is now $2B (double its 2022 figure). Copilot (40% of Github revenue) alone is now a bigger business than Github was when Microsoft acquired it. However, it’s just one of a number of coding companies, some of which are raising blockbuster rounds.
+
+## 118 ML tools for AI struggle (again)
+
+## 119 Are AI agents going commercial?
+
+## 120 AI-powered search begins to make a dent, amid teething problems
+
+## 145 Hot or not: smart glasses?
+
+## 152 Attention is all you need… to build raise billions for sell your AI start-up
+
+Noam Shazeer of Character.ai sold his team back to Google for $2.5B, while Adept was acqui-hired into Amazon and Inflection into Microsoft for $650M. These deals all involved hiring founders and star employees while paying enough money to investors as a technology licensing fee to get the deals through.
+
+Adept's $429m execuhire to Amazon
+
+Inflection's $650m execuhire to Microsoft
+
+Character.ai's $2.5b execuhire to Google today
+
+Co-auteur d’une recherche fondamentale qui a donné le coup d’envoi du boom de l’intelligence artificielle, Noam Shazeer avait quitté Google en 2021 pour créer sa propre entreprise après que le géant de Mountain View eut refusé de lancer un chatbot qu’il avait mis au point. Lorsque la start-up, Character.AI, a commencé à échouer, son ancien employeur est intervenu.
+
+# 153 Politics
+
+# 174 Safety
+
+# 204 Predictions
