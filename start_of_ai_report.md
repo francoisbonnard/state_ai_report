@@ -36,6 +36,8 @@ decoder-only transformer architecture
 GPT-4 : Environ 1,7 trillion de paramètres (estimation) et probablement autour de 10 à 15 trillions de tokens utilisés pour l'entraînement.
 LLaMA 2 : Paramètres de 7B à 70B, entraînés sur 2 trillions de tokens.
 
+Meta showcased open AI hardware designs, including the Catalina rack and the expanded Grand Teton platform, at the OCP Global Summit. Training the Llama 3.1 405B model required 16,000 NVIDIA H100 GPUs, highlighting Meta's scaling infrastructure. Open AI hardware systems are required to continue advancing AI capabilities.
+
 Meta used an incredible 15T tokens to train the Llama 3 family	
     
 Llama 3.1 405B was trained over 16,000 H100 GPUs, the first	Llama model trained at this scale.	
@@ -125,6 +127,14 @@ H100 : Les performances sont largement supérieures, avec jusqu’à 1 pétaflop
 ## 92 H100 
 
 ![alt text](./img/image3.png)
+
+[Nvidia CEO hand-delivers world's fastest AI system to OpenAI, again — first DGX H200 given to Sam Altman and Greg Brockman](https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-ceo-hand-delivers-worlds-fastest-ai-system-to-openai-again-first-dgx-h200-given-to-sam-altman-and-greg-brockman)
+
+1x DGX GH200
+Contains 256x GH200s (“Grace Hoppers”)
+Each GH200 contains 1x H100 and 1x Grace CPU
+
+
 
 ## 105 But where’s the revenue…?
 
