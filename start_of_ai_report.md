@@ -338,7 +338,7 @@ La **distillation de modèle** consiste à **transférer les connaissances** d'u
 | **Modèle de départ**    | Un modèle pré-entraîné                               | Un grand modèle (teacher) qui enseigne un modèle plus petit (student) |
 | **Données**             | Nécessite un nouveau jeu de données spécifique       | Utilise les prédictions du modèle teacher pour guider l'apprentissage |
 | **Méthode**             | Réentraînement sur des données spécifiques           | Entraînement du modèle student pour imiter le modèle teacher |
-| **Résultat**            | Modèle affiné pour une tâche précise                 | Modèle plus petit et plus rapide, proche du teacher en termes de performance |
+| **Résultat**            | Modèle affiné pour une tâche précise                 | Modèle plus petit et plus rapide,ch proche du teacher en termes de performance |
 | **Avantage principal**  | Amélioration des performances sur une tâche précise  | Réduction des coûts de calcul et de mémoire |
 
 ### Exemple d'application des deux :
