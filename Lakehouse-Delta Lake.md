@@ -11,7 +11,26 @@ In Spark, the DataFrame API is declarative, and lazy evaluation is used to build
 
 ![implementing a lakehose](./img/image10.png)
 
-## What is Deltalake
+## What is [Delta Lake](https://delta.io)
 
 Delta Lake is an open-table format that combines metadata, caching, and indexing with a data lake storage format. Together these provide an abstraction level to serve ACID transactions and other management features.
 
+Delta Lake provides :
+
+- ACID transactions
+- scalable metadata handling
+- a unified process model that spans batch and streaming
+- full audit history
+- support for SQL data manipulation language (DML) statements. 
+
+It can run on existing data lakes and is fully compatible with several processing engines, including Apache Spark.
+
+## Lakehouse architecture
+
+![Lakeouse architecture](./img/image11.png)
+
+## The Medallion Architecture
+
+![The Medallion Architecture](./img/image12.png)
+
+# Page 32 du doc
