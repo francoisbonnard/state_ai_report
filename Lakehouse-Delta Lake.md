@@ -34,3 +34,4 @@ It can run on existing data lakes and is fully compatible with several processin
 ![The Medallion Architecture](./img/image12.png)
 
 # Page 32 du doc
+
