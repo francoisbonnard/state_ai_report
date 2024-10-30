@@ -1,3 +1,5 @@
 delta lake project
 .env
+.venv
+poetry.lock
 

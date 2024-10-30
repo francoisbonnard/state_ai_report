@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "state-ai-report"
+version = "0.1.0"
+description = ""
+authors = ["François Bonnard <francois.bonnard@arrow.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gensim = "^4.3.3"
+transformers = "^4.46.1"
+torch = "^2.5.1"
+umap = "^0.1.1"
+matplotlib = "^3.9.2"
+umap-learn = "^0.5.7"
+python-decouple = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,1 @@
+![Visualisation avec GPT2](./img/image14.png)
