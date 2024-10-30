@@ -2,4 +2,5 @@ delta lake project
 .env
 .venv
 poetry.lock
+_pycache_
 
