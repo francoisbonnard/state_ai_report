@@ -45,3 +45,5 @@ In GPT-3, the **embedding space** is a high-dimensional vector space where each 
 The embedding space is designed to capture nuanced relationships between tokens. Similar tokens (in terms of meaning or usage) are mapped to vectors that are close to each other in this high-dimensional space. This representation allows the model to leverage the rich structure of language, capturing associations and contextual similarities between words that it has learned from large-scale training data. 
 
 In practice, each vector in the embedding space serves as the input for subsequent transformer layers, where further processing allows GPT-3 to generate coherent and contextually appropriate responses based on these embeddings.
+
+## continue with this [video](https://www.youtube.com/watch?v=wjZofJX0v4M&t=416s)
