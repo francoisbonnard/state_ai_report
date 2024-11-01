@@ -43,21 +43,50 @@ def get_word_embeddings(word_list):
     return tokens, embeddings
 
 # Exemple de mots pour lesquels obtenir des embeddings
-words = ["chat", "chien", "maison", "ordinateur", "soleil", "intelligence", "humain", "machine"]
+words = ["chat", "chien", "maison", "ordinateur", "soleil", "intelligence", "humain","robot"]
 tokens, embeddings = get_word_embeddings(words)
 
+
+# visualisation des similarités cosinus entre les embeddings de ces mots 
+from sklearn.metrics.pairwise import cosine_similarity
+import pandas as pd
+similarities = cosine_similarity(embeddings)
+df_similarities = pd.DataFrame(similarities, index=words, columns=words)
+print(df_similarities)
+
+# choix de la dimension 
+rep = 3
+
 # Réduction de dimension avec UMAP pour visualisation
-reducer = umap.UMAP(n_components=2, random_state=42)
+reducer = umap.UMAP(n_components=rep, random_state=42)
 
 embedding_2d = reducer.fit_transform(embeddings)
 
-# Visualiser les embeddings en 2D
-plt.figure(figsize=(10, 7))
-for i, (x, y) in enumerate(embedding_2d):
-    plt.scatter(x, y, marker='o', color='b')
-    plt.text(x + 0.01, y + 0.01, tokens[i], fontsize=12)
+if (rep ==2 ):
+    fig = plt.figure(figsize=(10, 7))
+    ax = fig.add_subplot(111, projection='3d')
 
-plt.title("Visualisation de l'espace d'embedding avec UMAP")
-plt.xlabel("Dimension 1")
-plt.ylabel("Dimension 2")
+    # Visualiser les embeddings en 2D
+    plt.figure(figsize=(10, 7))
+    for i, (x, y) in enumerate(embedding_2d):
+        plt.scatter(x, y, marker='o', color='b')
+        plt.text(x + 0.01, y + 0.01, tokens[i], fontsize=12)
+
+    plt.title("Visualisation de l'espace d'embedding avec UMAP")
+    plt.xlabel("Dimension 1")
+    plt.ylabel("Dimension 2")
+elif (rep==3):
+    fig = plt.figure(figsize=(10, 7))
+    ax = fig.add_subplot(111, projection='3d')
+
+    # Ajout des points et des labels
+    for i, (x, y, z) in enumerate(embedding_2d):
+        ax.scatter(x, y, z, marker='o', color='b')
+        ax.text(x + 0.01, y + 0.01, z + 0.01, tokens[i], fontsize=10)
+
+    ax.set_title("Visualisation de l'espace d'embedding en 3D avec UMAP")
+    ax.set_xlabel("Dimension 1")
+    ax.set_ylabel("Dimension 2")
+    ax.set_zlabel("Dimension 3")
+
 plt.show()
