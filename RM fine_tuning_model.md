@@ -22,3 +22,11 @@
 PPO DPO KTO IPO explained [here](https://huggingface.co/blog/pref-tuning)
 
 ![Create SFT dataset](./img/image21.png)
+
+![SFT techiques](./img/image22.png)
+
+![Model Merging](./img/image23.png)
+
+![Merge techniques](./img/image24.png)
+
+![mIXTURE OF Expert](./img/image25.png)
