@@ -1,16 +1,24 @@
-# Tools
+# Overview
 
-## MLX
+![Sequence of fine tuning](./img/image16.png)
 
+![When to use fine tuning](./img/image17.png)
+
+![Fine Tuning Library](./img/image18.png)
+
+## TRL (from HF)
+## Axolotl
+## Llama-factory
 ## [Unsloth](https://unsloth.ai/)
 
-## Axolotl
+[tuto by Maxime](https://mlabonne.github.io/blog/posts/2024-07-29_Finetune_Llama31.html)
 
-# Method
+## MLX (Ollama)
 
-1. create the dataset
-2. Run the fine tuning process
-3. Use the adapter with a model
+![SFT = Supervised Fine Tuning](./img/image19.png)
 
-[tuto](https://www.youtube.com/watch?v=3UQ7GY9hNwk)
-Go to ollama.com
+![Preference Alignment](./img/image20.png)
+
+PPO DPO KTO IPO explained [here](https://huggingface.co/blog/pref-tuning)
+
+![Create SFT dataset](./img/image21.png)
