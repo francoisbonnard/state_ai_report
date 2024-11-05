@@ -1,3 +1,6 @@
+
+# chapter 1
+
 [Start here](https://github.com/mlabonne/llm-course)
 
 Autoregressive : they generate the next tokens based on the sequence of tokens already generated
@@ -69,3 +72,71 @@ specialized domain (e.g., biomedical, finance, etc.)
 4o :  4,096 tokens
 OpenAI's GPT-4-turbo-32k (with a 32,768-token context) 
 OpenAI o1-preview model features a context window of 128,000 tokens
+
+## Scaling Laws
+
+language model’s performance 
+
+Factors : 
+
+1. The number of parameters (N) denotes the model’s
+ability to learn from data. A greater number of
+parameters enables the detection of more
+complicated patterns in data.
+2. The size of the Training Dataset (D) and the number
+of tokens, ranging from small text chunks to single
+characters, are counted.
+3. FLOPs (Floating Point Operations Per Second)
+estimate the computational resources used during
+training.
+
+[Chincchilla model](https://arxiv.org/abs/2203.15556)
+
+N:70B, D:1,4T -> for a model with X parameters, the optimal training involves approximately X * 20 tokens
+
+## Emergent Abilities in LLMs
+
+## Evaluation Benchmarks for Emergent Abilities
+
+- [BIG-Bench](https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/README.md)
+- [TruthfulQ](https://github.com/sylinrl/TruthfulQA)
+- the Massive Multi-task Language Understanding ([MMLU](https://arxiv.org/abs/2009.03300))
+- the Word in Context ([WiC](https://arxiv.org/abs/1808.09121v3))
+- [WinoBias](http://uclanlp.github.io/corefBias/)
+
+## Optimization Techniques to Expand the Context Window
+
+ALiBi Positional Encoding
+- Sparse Attention
+- Flash Attention
+- Multi Query Attention MQA
+- Flash Attention 2
+
+# Chapter 2 - LLM Architectire & Landscape
+
+![The transformer Model architecture](./img/image26.png)
+
+Dans le schéma du modèle Transformer, le flux qui entre dans le nœud "Output Embedding" en bas à droite représente les données de sortie, décalées d'un pas (ou "shifted right"). Voici une explication de ce flux et de son importance dans le modèle Transformer :
+
+1. **Décalage de la sortie vers la droite (shifted right)** : Dans le modèle Transformer utilisé pour des tâches de génération de séquences, comme la traduction, chaque élément de sortie est généré de manière séquentielle en utilisant les informations des sorties précédentes. Ce décalage empêche le modèle de "voir" le mot qu'il est en train de prédire. Par exemple, pour générer le mot \( y_t \) à l'étape \( t \), le modèle ne reçoit en entrée que les mots précédents \( y_1, y_2, \ldots, y_{t-1} \).
+
+2. **Output Embedding** : Ce nœud représente la vectorisation des sorties. Chaque élément de la séquence de sortie (les mots précédemment générés ou fournis comme contexte) est transformé en un vecteur d'embedding, similaire à la manière dont les mots d'entrée sont convertis en vecteurs dans "Input Embedding". Cette transformation est essentielle pour que le modèle puisse traiter les données de sortie en tant qu'entrée pour les couches suivantes du décodeur.
+
+3. **Utilisation des embeddings dans le décodeur** : Les embeddings de sortie décalés sont ensuite combinés avec l’encodage positionnel et traités par les couches de "Masked Multi-Head Attention" et "Add & Norm" pour prédire le prochain mot de la séquence. Le masquage est essentiel ici, car il empêche le modèle de regarder des éléments futurs de la séquence cible.
+
+En résumé, ce flux "shifted right" dans "Output Embedding" alimente le décodeur avec les sorties précédentes décalées, permettant au modèle de générer la séquence cible de manière itérative, un élément à la fois, tout en empêchant l'accès aux informations futures.
+
+## Process 
+
+- Input Embedding
+- Positional Encoding
+- Self-attention mechanism
+  - Query vector
+  - Key vector
+  - Value vector
+  
+## Architecture in action
+
+page 76
+
+
