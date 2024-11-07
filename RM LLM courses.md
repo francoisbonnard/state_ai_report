@@ -1,3 +1,5 @@
+[Source](https://towardsai.net/book)
+
 
 # chapter 1
 
@@ -138,5 +140,23 @@ En résumé, ce flux "shifted right" dans "Output Embedding" alimente le décode
 ## Architecture in action
 
 page 76
+
+
+## 105 Proprietary vs. Open Models vs. Open-Source Language Models
+
+Open models, like Meta’s LLaMA 2 or Mistral’s
+Mixtral 8x7B, have their model architectures and weights
+openly available on the internet. Finally, open-source
+models like OLMo by AI2 provide complete pre-training data,
+training code, evaluation code, and model weights, enabling
+academics and researchers to re-create and analyze the
+model in depth.
+
+
+## 116 Applications and Use-Cases of LLMs 
+
+### Healthcare and Medical Research
+
+# 125 Chapter 3
 
 
