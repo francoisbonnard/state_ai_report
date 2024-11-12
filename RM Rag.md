@@ -65,3 +65,24 @@ For the evaluation, we will be considering the following metrics, with a focus o
 - ROUGE-L
 - BERTScore
 - BERT Sentence Similarity"
+
+
+1. **Context Relevance (Pertinence du contexte)** :
+   - Mesure la pertinence des documents récupérés par rapport à la question posée. Elle évalue si l’information nécessaire pour répondre à la question est présente dans le contexte.
+
+2. **Chunk Relevance (Pertinence des morceaux)** :
+   - Évalue la proportion d’informations utiles dans les morceaux de documents récupérés. Elle permet de déterminer si les informations extraites sont principalement pertinentes ou si elles contiennent du bruit.
+
+3. **Faithfulness (Fidélité)** :
+   - Indique si la réponse générée par le modèle est fidèle aux informations fournies. Une réponse fidèle ne contient pas de "hallucinations" (c'est-à-dire d'informations inventées) et respecte strictement le contenu du contexte.
+
+4. **ROUGE-L** :
+   - Mesure la similarité entre la réponse générée et une réponse de référence en se basant sur des correspondances de séquences de mots. ROUGE-L est souvent utilisé pour évaluer la qualité des résumés en vérifiant les chaînes de mots en commun.
+
+5. **BERTScore** :
+   - Utilise le modèle BERT pour évaluer la similarité entre la réponse générée et une réponse de référence à un niveau sémantique. Plutôt que de se baser sur des mots exacts, BERTScore évalue si les réponses sont similaires en sens.
+
+6. **BERT Sentence Similarity (Similarité de phrases BERT)** :
+   - Mesure la similarité entre la réponse générée et la réponse attendue en utilisant les embeddings de phrase de BERT. Cette métrique évalue la proximité sémantique entre les phrases, ce qui aide à vérifier si les réponses sont alignées en termes de sens global.
+
+En résumé, **Context Relevance** et **Chunk Relevance** se concentrent sur la pertinence des informations récupérées, tandis que **Faithfulness** vérifie la fidélité de la réponse au contexte. **ROUGE-L** évalue la correspondance des mots, alors que **BERTScore** et **BERT Sentence Similarity** utilisent des modèles de langage pour une évaluation sémantique plus fine.
