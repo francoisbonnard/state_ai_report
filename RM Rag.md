@@ -1,3 +1,5 @@
+# RAG Quadrant QuotientAi
+
 [Source Youtube](https://youtu.be/DId2KP8Ykz4?si=xuQ9Gr8-unz0mVZh)
 
 ![Flavours of Rag](./img/image34.png)
@@ -86,3 +88,27 @@ For the evaluation, we will be considering the following metrics, with a focus o
    - Mesure la similarité entre la réponse générée et la réponse attendue en utilisant les embeddings de phrase de BERT. Cette métrique évalue la proximité sémantique entre les phrases, ce qui aide à vérifier si les réponses sont alignées en termes de sens global.
 
 En résumé, **Context Relevance** et **Chunk Relevance** se concentrent sur la pertinence des informations récupérées, tandis que **Faithfulness** vérifie la fidélité de la réponse au contexte. **ROUGE-L** évalue la correspondance des mots, alors que **BERTScore** et **BERT Sentence Similarity** utilisent des modèles de langage pour une évaluation sémantique plus fine.
+
+# Book RAG Driven Generative AI
+
+The fundamental difference between a model trained
+from scratch or fine-tuned and RAG can be summed up in terms of
+parametric and non-parametric knowledge
+
+Trade off between : static (parametric) and dynamic (non-parametric) ever-evolving data the generative AI model must process.
+
+![RAG framework & Ecosystem](./img/image39.png)
+
+- The Retriever (D) handles data collection, processing, storage, and retrieval
+- The Generator (G) handles input augmentation, prompt engineering,  generation
+- The Evaluator (E) handles mathematical metrics, human evaluation, and feedback
+
+Data can be : 
+
+- chunked (broken into smaller parts), 
+- embedded (transformed into vectors) 
+- indexed to enhance searchability and retrieval efficiency.
+
+page 40
+
+https://github.com/Denis2054/RAG-Driven-Generative-AI/blob/main/Chapter01/RAG_Overview.ipynb
