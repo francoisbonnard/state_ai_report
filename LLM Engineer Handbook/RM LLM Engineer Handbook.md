@@ -51,3 +51,9 @@ One-hot encoding is a technique that converts categorical variables into a binar
 ### Creatin Embeddings
 
 Embeddings are created by deep learning models that understand the context and semantics of your input and project it into a continuous vector space.
+
+### How does a vector DB work?
+
+a vector DB uses approximate nearest neighbor (ANN) algorithms to find these close neighbors. Standard nearest neighbor algorithms are too slow to work in practice
+
+Indexing vectors: Vectors are indexed using data structures optimized for high-dimensional data. Common indexing techniques include hierarchical navigable small world (HNSW), random projection, product quantization (PQ), and locality-sensitive hashing (LSH)
